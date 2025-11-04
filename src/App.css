@@ -1,0 +1,14 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+#ip {
+  max-width: 500px;
+}
