@@ -7,7 +7,6 @@ import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
 import "./App.css";
-import { Analytics } from "@vercel/analytics/next";
 function App() {
   const [ipAddress, setIpAddress] = useState(["", "", "", ""]);
   const [mask, setMask] = useState("");
