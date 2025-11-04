@@ -1,18 +1,56 @@
-# React + Vite
+# IPMaker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application moderne pour la gestion et la génération d'adresses IP, construite avec React.
 
-Currently, two official plugins are available:
+## 🚀 Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interface utilisateur moderne et intuitive
+- Génération d'adresses IP
 
-## React Compiler
+## 🛠️ Installation
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. Clonez le dépôt :
 
-Note: This will impact Vite dev & build performances.
+   ```bash
+   git clone https://github.com/DevDhomm/ipmaker.git
+   cd ipmaker
+   ```
 
-## Expanding the ESLint configuration
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Développement
+
+Pour lancer l'app en mode développement :
+
+```bash
+npm run dev
+```
+
+## 📦 Construction
+
+Pour construire l'application :
+
+```bash
+npm run build
+```
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à :
+
+1. Fork le projet
+2. Créer une branche pour votre fonctionnalité
+3. Commiter vos changements
+4. Pousser vers la branche
+5. Ouvrir une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## 👥 Auteur
+
+- [DevDhomm](https://github.com/DevDhomm)
