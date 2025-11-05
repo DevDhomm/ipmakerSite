@@ -174,15 +174,20 @@ function App() {
     const octets = address.split(".");
 
     return (
-      <div className="flex align-items-center gap-2">
+      <div className="flex align-items-center gap-2 ip-row">
         {octets.map((octet, index) => (
           <>
-            <InputText key={index} value={octet} className="w-4rem" disabled />
+            <InputText
+              key={index}
+              value={octet}
+              className="ip-input"
+              disabled
+            />
             {index < 3 && <span>.</span>}
           </>
         ))}
         <span>/</span>
-        <InputText value={mask} className="w-4rem" disabled />
+        <InputText value={mask} className="ip-input" disabled />
       </div>
     );
   };
@@ -202,7 +207,7 @@ function App() {
                       value={octet}
                       onChange={(e) => handleInputChange(index, e.target.value)}
                       onKeyDown={(e) => handleKeyDown(index, e)}
-                      className={`w-4rem ${
+                      className={`ip-input ${
                         index === 0 && octet && !isValidClassC(octet)
                           ? "p-invalid"
                           : ""
@@ -228,7 +233,7 @@ function App() {
                 ref={inputRefs[4]}
                 value={mask}
                 onChange={(e) => handleInputChange(4, e.target.value)}
-                className="w-4rem"
+                className="ip-input"
                 maxLength={2}
                 placeholder="24"
               />
@@ -253,7 +258,7 @@ function App() {
                 <label htmlFor="subNetwork">Sous-réseau</label>
               </span>
             </div>
-            <div className="flex align-items-center gap-2">
+            <div className="flex align-items-center gap-2 actions">
               <Button
                 type="submit"
                 label="Générer"

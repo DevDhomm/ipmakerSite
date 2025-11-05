@@ -1,14 +1,60 @@
 #root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
 .container {
-  min-width: 500px;
-  margin: 0 auto;
 }
 
-#ip {
-  max-width: 500px;
+/* Responsive rules for IP inputs and layout */
+.ip-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ip-input {
+  width: 4rem;
+  min-width: 3rem;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .ip-input {
+    width: 3.2rem;
+  }
+  .users {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  .users .p-float-label {
+    width: 100%;
+  }
+  .actions {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  .actions .p-button {
+    width: 100%;
+  }
 }
